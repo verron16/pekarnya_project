@@ -45,12 +45,10 @@
 }
 
 .shop-item {
-  padding-bottom: 70px;
   z-index: 12;
+  padding-bottom: 70px;
   &__scroll {
     height: 200px;
-    position: absolute;
-    padding-top: 130px;
     z-index: 10;
     background: #0B0B0B;
     transition: .3s ease;
@@ -110,13 +108,19 @@
   }
 }
 
+
+::placeholder {
+  font-size: 16px !important;
+}
+
 .feedback {
   padding-top: 175px;
   display: flex;
   flex-direction: column;
   &__label {
     font-family: $fontGabriela;
-    font-size: 36px;
+    font-size: 20px;
+    padding-left: 25px;
     padding-bottom: 20px;
     color: white;
     font-weight: 400;
@@ -140,7 +144,7 @@
       font-family: $fontBellota;
       font-weight: 400;
       color: rgba(255,255,255,0.3);
-      font-size: 24px;
+      font-size: 16px;
     }
     &-disabled {
       border: 1px solid rgba(255,255,255,0.3);

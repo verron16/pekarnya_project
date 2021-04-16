@@ -316,11 +316,11 @@
     font-size: 36px;
   }
   .shop-item__subtitle {
-    font-size: 36px;
+    font-size: 20px;
     letter-spacing: 0;
   }
   .shop-item__description {
-    font-size: 18px;
+    font-size: 16px;
     padding-left: 0;
   }
   .feedback {
@@ -341,6 +341,7 @@
     justify-content: center;
   }
   .cart {
+    margin-top: 90px;
     &__label {
       font-size: 18px;
     }
@@ -379,7 +380,7 @@
     }
   }
   .shop-item__scroll {
-    max-width: 320px;
+    max-width: 361px;
     width: 100%;
   }
   .shop-item__subtitle-elem {
@@ -396,10 +397,15 @@
     height: 26px;
   }
   .process-item__subtitle {
-    font-size: 24px;
+    font-size: 18px;
     &::before {
       font-size: 27px;
       left: 87px;
+    }
+    &-first {
+      &::before {
+        left: 107px;
+      }
     }
   }
   .process-item__description {
@@ -407,7 +413,7 @@
     line-height: 130%;
   }
   .baking-item__picture {
-    width: 250px;
+    width: 280px;
     height: 205px;
   }
   .baking-item__subtitle {
@@ -477,10 +483,7 @@
     &__subtitle {
       font-size: 24px;
       text-align: center;
-      &::before {
-        left: 5px;
-        top: 5px;
-      }
+
       &-three {
         &::before {
           left: -15px;
