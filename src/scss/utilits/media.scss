@@ -324,7 +324,7 @@
     padding-left: 0;
   }
   .feedback {
-    padding-top: 200px;
+    padding: 0 !important;
     &__field {
       padding: 15px 24px;
       margin-left: auto;
@@ -386,6 +386,13 @@
   .shop-item__subtitle-elem {
     padding-left: 0;
   }
+  .point {
+    &__subtitle {
+      &::before {
+        top: 5px !important;
+      }
+    }
+  }
 }
 
 @media screen and (max-width:468px) {
@@ -404,7 +411,7 @@
     }
     &-first {
       &::before {
-        left: 107px;
+        left: 87px;
       }
     }
   }
@@ -417,7 +424,7 @@
     height: 205px;
   }
   .baking-item__subtitle {
-    font-size: 24px;
+    font-size: 20px;
     &::before {
       font-size: 24px;
     }
