@@ -1,0 +1,65 @@
+.baking {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url('../img/baking.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: $paddingSection;
+  &__title {
+    @include titleSection;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 90px;
+  }
+}
+
+.baking-item {
+  &__picture {
+    width: 450px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  &__icon {
+    object-fit: cover;
+    width: 100%;
+    filter: drop-shadow(0px 50px 80px rgba(0, 0, 0, 0.26));
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-top: 50px;
+  }
+  &__subtitle {
+    font-family: $fontGabriela;
+    font-size: 36px;
+    font-weight: 400;
+    color: white;
+    position: relative;
+    &::before {
+      content: '1';
+      @include numbersBakingBefore;
+      left: -30px;
+      top: -2px;
+    }
+    &-two {
+      &::before {
+        content: '2';
+      }
+    }
+  }
+  &__price {
+    font-family: $fontBellota;
+    font-size: 24px;
+    font-weight: 400;
+    color: $secondColor;
+    padding-left: 30px;
+    padding-top: 10px;
+  }
+  &__button {
+    cursor: pointer;
+  }
+}

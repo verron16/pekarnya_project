@@ -1,0 +1,76 @@
+.about {
+  padding: $paddingSection;
+  background: #0B0B0B;
+  overflow: hidden;
+  padding-bottom: 320px;
+  &__title {
+    @include titleSection;
+  }
+}
+
+.point {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+  &__picture {
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: '01';
+      @include numbersBefore;
+      bottom: -150px;
+      right: -170px;
+      z-index: -1;
+    }
+    &-two {
+      &::before {
+        content: '02';
+        right: -220px;
+      }
+      .point__icon {
+        width: 445px;
+        height: 378px;
+      }
+    }
+    &-three {
+      &::before {
+        left: -100px;
+        top: 160px;
+        content: '03';
+      }
+      .point__icon {
+        width: 445px;
+        height: 286px;
+      }
+    }
+  }
+  &__icon {
+    width: 450px;
+    height: 403px;
+    z-index: 1;
+    filter: drop-shadow(0px 50px 80px rgba(0, 0, 0, 0.26));
+  }
+  &__info {
+    color: white;
+  }
+  &__subtitle {
+    font-family: $fontGabriela;
+    font-weight: 400;
+    font-size: 48px;
+    padding-bottom: 30px;
+    position: relative;
+    &::before {
+      @include circleBefore;
+    }
+  }
+  &__description {
+    font-family: $fontBellota;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+  }
+  &-two {
+    flex-direction: row-reverse;
+  }
+}

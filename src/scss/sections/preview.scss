@@ -1,0 +1,136 @@
+.preview {
+    padding-top: 120px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-feedback {
+            padding-top: 120px;
+        }
+    }
+
+    &__item {
+        &-lang {
+            display: flex;
+            flex-direction: column;
+        }
+        &-soc {
+            z-index: 1000;
+        }
+
+        &-number {
+            font-family: $fontBellota;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            font-size: 18px;
+            transition: .3s ease;
+            z-index: 1000;
+            &:hover {
+                color: $mainColor;
+            }
+        }
+    }
+}
+
+.item-info {
+    &__description {
+        font-family: $fontBellota;
+        font-size: 24px;
+        color: white;
+        font-weight: 400;
+        padding-bottom: 38px;
+
+        & span {
+            color: $mainColor;
+        }
+    }
+
+    &__title {
+        font-family: $fontGabriela;
+        font-size: 96px;
+        color: white;
+        font-weight: 400;
+        padding-bottom: 38px;
+        line-height: 78.34px;
+    }
+
+    &__btn {
+        cursor: pointer;
+        border: 1px solid $mainColor;
+        width: 187px;
+        height: 58px;
+        font-family: $fontBellota;
+        font-weight: 400;
+        color: $mainColor;
+        font-size: 24px;
+        outline: none;
+        background: transparent;
+        transition: .3s ease;
+
+        &:hover {
+            color: #0B0B0B;
+            background: $mainColor;
+        }
+
+        &:active {
+            background: white;
+        }
+    }
+}
+
+.item-lang__link {
+    z-index: 1000;
+    font-family: $fontBellota;
+    color: white;
+    margin-bottom: 44px;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .3s ease;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:hover {
+        color: $mainColor;
+    }
+}
+
+.item-soc {
+    &__link {
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__icon {
+        & path {
+            transition: .3s ease;
+        }
+
+        &:hover {
+            path {
+                fill: $mainColor;
+            }
+        }
+    }
+}
+
+// style, when clicked on burger icon
+
+.open {
+    & span {
+        &:last-child {
+            transform: rotate(90deg);
+            width: 30px;
+        }
+    }
+}
+

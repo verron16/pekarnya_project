@@ -1,0 +1,42 @@
+@mixin titleSection {
+  font-family: $fontBellota;
+  font-weight: 700;
+  color: $mainColor;
+  font-size: 64px;
+  letter-spacing: -0.05em;
+}
+
+@mixin numbersBefore {
+  position: absolute;
+  font-family: $fontBellota;
+  font-weight: 700;
+  font-size: 300px;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+@mixin circleBefore {
+  content: '';
+  left: -25px;
+  top: 15px;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid $mainColor;
+}
+
+@mixin numbersBakingBefore {
+  position: absolute;
+  font-family: $fontBellota;
+  font-weight: 700;
+  font-size: 36px;
+  color: $mainColor;
+}
+
+@mixin numbersProcessBefore {
+  font-family: $fontBellota;
+  position: absolute;
+  font-size: 36px;
+  color: $mainColor;
+  font-weight: 700;
+}

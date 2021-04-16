@@ -1,0 +1,197 @@
+main
+    section.about#about
+        .container
+            h2.about__title.title-section О нас
+            .point
+                .point__picture
+                    img(src="img/picture.png").point__icon
+                .point__info
+                    h3.point__subtitle Вкуснейший лаваш
+                    h5.point__description Для вас всегда есть горячий,#[br]ароматный лаваш, который#[br]оставит вам незабываемые#[br]вкусовые радости
+            .point.point-two
+                .point__picture.point__picture-two
+                    img(src="img/picture2.png").point__icon
+                .point__info
+                    h3.point__subtitle Вкуснейший лаваш
+                    h5.point__description Мы сохраняем многовековые#[br]армянские традиции выпечки#[br]лаваша, тем самым передавая#[br]истенный вкус
+            .point.point-three
+                .point__picture.point__picture-three
+                    img(src="img/picture3.png").point__icon
+                .point__info
+                    h3.point__subtitle.point__subtitle-three Ароматный матнакаш
+                    h5.point__description Матнакаш — армянский#[br]национальный хлеб форме#[br]толстой овальной лепёшки с#[br]крупнопористым мякишем и#[br]твёрдой корочкой.
+    section.baking#baking
+        .container
+            h2.baking__title.title-section  Наша выпечка
+            .baking__wrapper
+                .baking-item
+                    .baking-item__picture
+                        img(src="img/picture4.png").baking-item__icon
+                    .baking-item__wrapper
+                        h3.baking-item__subtitle Армянский лаваш
+                        a(href="#shop")
+                            svg(width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg").baking-item__button.control-element
+                                path(d="M18.5 0V37" stroke="white")
+                                path(d="M37 18.5L0 18.5" stroke="white")
+                    p.baking-item__price 80руб/шт
+                .baking-item
+                    .baking-item__picture
+                        img(src="img/picture5.png").baking-item__icon
+                    .baking-item__wrapper
+                        h3.baking-item__subtitle.baking-item__subtitle-two Выпечка
+                        a(href="#shop")
+                            svg(width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg").baking-item__button.control-element
+                                path(d="M18.5 0V37" stroke="white")
+                                path(d="M37 18.5L0 18.5" stroke="white")
+                    p.baking-item__price от20руб/шт
+    section.process#process
+        .container
+            h2.process__title.title-section  Процесс работы
+            .process-item
+                .process-item__info
+                    h3.process-item__subtitle Получем ваш заказ
+                    h5.process-item__description Идейные соображения#[br]высшего порядка, а также#[br]консультация с широким#[br]активом способствует#[br]подготовки.
+                .process-item__picture
+                    img(src="img/picture6.png").process-item__icon
+            img(src="img/icons/line-sm.svg").process__arrow-sm
+            img(src="img/icons/line.svg").process__arrow
+            .process-item.process-item-two
+                .process-item__info
+                    h3.process-item__subtitle.process-item__subtitle-two Готовим
+                    h5.process-item__description После получения заказа,#[br]за работу берутся лучшие#[br]повара, которые сразу же#[br]готовят вашу выпечку за#[br]многовековыми рецептами#[br]Армении.
+                .process-item__picture
+                    img(src="img/picture7.png").process-item__icon
+            img(src="img/icons/line-sm.svg").process__arrow-sm
+            img(src="img/icons/line2.svg").process__arrow
+            .process-item
+                .process-item__info
+                    h3.process-item__subtitle.process-item__subtitle-three Отправляем
+                    h5.process-item__description После того как ваш#[br]вкуснейший, ароматнейший#[br]лаваш приготовился, мы#[br]отправляем его вам или вы#[br]самовывоз.
+                .process-item__picture
+                    img(src="img/picture8.png").process-item__icon
+            button.process__button#js-button-buy Заказать лаваш
+    section.reviews#reviews
+        .container
+            h2.reviews__title.title-section  Отзывы
+            .reviews__wrapper
+                .review
+                    img(src="img/person.png").review__icon
+                    h3.review__name Лариса
+                    .review__circle
+                    h6.review__description Мне понравился сервис,#[br]хороший, коммуникабельный#[br]персонал. Приготовили очень#[br]быстро. Спасибо большое,#[br]советую.
+                .review
+                    img(src="img/person2.png").review__icon
+                    h3.review__name Максим
+                    .review__circle
+                    h6.review__description Очень крутые ребята,#[br]сервис понравился, всё быстро,#[br]ответственно и очень вкусно.#[br]Теперь мы с друзями будем#[br]только у них заказывать#[br]лаваши.
+                .review
+                    img(src="img/person3.png").review__icon
+                    h3.review__name Владимир
+                    .review__circle
+                    h6.review__description Самый вкусный матнакаш#[br]что я только ел, Своим#[br] вкусом передает тот самый#[br]армянский дух. Молодцы
+    section.shop#shop
+        .container
+            h2.shop__title.title-section  Заказ
+            .shop__wrapper
+                .shop-items
+                    ul.shop-items__wrapper
+                        li.shop-item
+                            .shop-item__subwrapper.shop-item__subtitle-offset
+                                .shop-item__flex
+                                    p.shop-item__number 1
+                                    h3.shop-item__subtitle Армянский лаваш
+                                svg(width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg").control__add.control-element
+                                    path(d="M18.5 0V37" stroke="white")
+                                    path(d="M37 18.5L0 18.5" stroke="white")
+                            p.shop-item__description 80руб/шт
+                        li.shop-item.shop-item__scroll
+                            .scroll
+                                .shop-item__subwrapper
+                                    .shop-item__flex
+                                        p.shop-item__number 2
+                                        h3.shop-item__subtitle.shop-item__subtitle-offset Выпечка
+                                    svg(width="17" height="38" viewBox="0 0 17 38" fill="none" xmlns="http://www.w3.org/2000/svg" @click="openList" :style=" isVisibleList ? 'transform: rotate(180deg);' : 'transform: rotate(0deg)' ").shop-item__arrow-down.control-element.control__add
+                                        path(d="M8.5 0V37M8.5 37L0.5 29M8.5 37L16.5 29" stroke="white")
+                                p.shop-item__description.shop-item__description-baking 120руб/шт
+                                .scroll__items(:style=" isVisibleList ? 'min-height: 700px;' : 'min-height: 0;' ")
+                                    .shop-item__flex.shop-item__flex-scroll
+                                        h3.shop-item__subtitle.shop-item__subtitle-elem Армянский лаваш
+                                        svg(width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg").control__add.control-element
+                                            path(d="M18.5 0V37" stroke="white")
+                                            path(d="M37 18.5L0 18.5" stroke="white")
+                                    p.shop-item__description.shop-item__description-baking 80руб/шт
+                                    .shop-item__flex.shop-item__flex-scroll
+                                        h3.shop-item__subtitle.shop-item__subtitle-elem Армянский лаваш
+                                        svg(width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg").control__add.control-element
+                                            path(d="M18.5 0V37" stroke="white")
+                                            path(d="M37 18.5L0 18.5" stroke="white")
+                                    p.shop-item__description.shop-item__description-baking 80руб/шт
+                                    .shop-item__flex.shop-item__flex-scroll
+                                        h3.shop-item__subtitle.shop-item__subtitle-elem Армянский лаваш
+                                        svg(width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg").control__add.control-element
+                                            path(d="M18.5 0V37" stroke="white")
+                                            path(d="M37 18.5L0 18.5" stroke="white")
+                                    p.shop-item__description.shop-item__description-baking 80руб/шт
+                                    .shop-item__flex.shop-item__flex-scroll
+                                        h3.shop-item__subtitle.shop-item__subtitle-elem Армянский лаваш
+                                        svg(width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg").control__add.control-element
+                                            path(d="M18.5 0V37" stroke="white")
+                                            path(d="M37 18.5L0 18.5" stroke="white")
+                                    p.shop-item__description.shop-item__description-baking 80руб/шт
+                                    .shop-item__flex.shop-item__flex-scroll
+                                        h3.shop-item__subtitle.shop-item__subtitle-elem Армянский лаваш
+                                        svg(width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg").control__add.control-element
+                                            path(d="M18.5 0V37" stroke="white")
+                                            path(d="M37 18.5L0 18.5" stroke="white")
+                                    p.shop-item__description.shop-item__description-baking 80руб/шт
+                    form(action="#").feedback
+                        label(for="name").feedback__label Ваше имя
+                        input(type="text", required, placeholder="Имя").feedback__field#name
+                        label(for="telephone").feedback__label Номер телефона
+                        input(type="tel", required, placeholder="Номер телефона").feedback__field#telephone
+                        label(for="address").feedback__label.feedback__label-disabled Ваш адрес доставки
+                        input(type="text", disabled, required, placeholder="При заказе 50шт.+").feedback__field.feedback__field-disabled#address
+                .cart
+                    .cart__wrapper
+                        h3.cart__subtitle Ваш заказ
+                        ul.cart__items
+                            li.cart-item
+                                img(src="img/picture9.png").cart-item__icon
+                                .cart-item__subwrapper
+                                    h4.cart-item__name Лаваш
+                                    .control
+                                        svg(width="26" height="1" viewBox="0 0 26 1" fill="none" xmlns="http://www.w3.org/2000/svg").control__delete.control-element
+                                            path(d="M26 0.5L5.96046e-08 0.499999" stroke="white")
+                                        p.control__count 1
+                                        svg(width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg").control__add.control-element
+                                            path(d="M18.5 0V37" stroke="white")
+                                            path(d="M37 18.5L0 18.5" stroke="white")
+                            li.cart-item
+                                img(src="img/picture10.png").cart-item__icon
+                                .cart-item__subwrapper
+                                    h4.cart-item__name Матнакаш
+                                    .control
+                                        svg(width="26" height="1" viewBox="0 0 26 1" fill="none" xmlns="http://www.w3.org/2000/svg").control__delete.control-element
+                                            path(d="M26 0.5L5.96046e-08 0.499999" stroke="white")
+                                        p.control__count 1
+                                        svg(width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg").control__add.control-element
+                                            path(d="M18.5 0V37" stroke="white")
+                                            path(d="M37 18.5L0 18.5" stroke="white")
+                        .cart__result
+                            .result
+                                p.result__subtitle Суммка покупки
+                                p.result__price {{totalPrice}} руб
+                            button.cart__button#js-button-buy-cart Заказать
+                        .cart__agree
+                            input(type="checkbox").cart__checkbox#js-checkbox
+                            label(for="js-checkbox").cart__label Перезвонить
+                            p.cart__text После заказа мы перезвоним вам,#[br]чтобы уточнить ваши данные
+                        button.cart__button.cart__button-sm#js-button-buy-cart Заказать
+
+
+
+
+
+
+
+

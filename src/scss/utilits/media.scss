@@ -1,0 +1,527 @@
+@media screen and (max-width: 1450px) {
+  .point {
+    &__picture {
+      &-two {
+        &::before {
+          left: 160px;
+          top: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .point {
+    &__info {
+      &:nth-child(2) {
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1076px){
+  .shop {
+    &__wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .cart {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 978px) {
+
+  .lower-menu__item {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .reviews {
+    &__wrapper {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .review:nth-child(2) {
+    display: none;
+  }
+  .process-item {
+    padding-top: 40px;
+    &-two {
+      padding-bottom: 40px;
+    }
+    &:nth-child(2) {
+      padding-top: 90px;
+      padding-bottom: 40px;
+    }
+    &__picture {
+      width: 285px;
+      height: 226px;
+    }
+  }
+  .item-info {
+    &__title {
+      font-size: 72px;
+    }
+  }
+  .baking-item {
+    &_icon {
+      width: 350px;
+      height: 250px;
+    }
+    &__picture {
+      width: 350px;
+      height: 250px;
+    }
+  }
+  .about {
+    padding-bottom: 260px;
+  }
+  .point {
+    padding-top: 190px;
+    &:nth-child(2) {
+      padding-top: 100px;
+    }
+    &__picture {
+      & .point__icon {
+        width: 285px;
+        height: 242px;
+      }
+      &-two {
+        &::before {
+          top: 60px;
+          left: 30px;
+        }
+      }
+      &-three {
+        & .point__icon {
+          width: 285px;
+          height: 184px;
+        }
+        &::before {
+          top: 50px;
+        }
+      }
+    }
+  }
+  .review {
+    width: calc(100%/12*6);
+  }
+}
+
+// style for menu
+
+@media screen and (max-width: 890px){
+  .preview__item-info {
+    z-index: 1000;
+  }
+
+  .burger {
+    z-index: 10;
+  }
+  .menu {
+    min-height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 0;
+    z-index: 2;
+    &__item {
+      margin-bottom: 44px;
+      text-align: right;
+      &:first-child {
+        margin-top: 200px;
+      }
+      &:last-child {
+        margin-right: 44px;
+      }
+    }
+    &__overflow {
+      flex-direction: column;
+      min-height: 100vh;
+      background: rgba(0, 0, 0, 0.85);
+      width: 70vw;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .process-item__description {
+    font-size: 20px;
+  }
+  .lower-menu__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .lower-menu {
+    padding-bottom: 35px;
+  }
+  .lower-menu__item {
+    margin-right: 0;
+    margin-top: 35px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .preview__item-lang {
+    display: none;
+  }
+  .item-info__description {
+    font-size: 20px;
+  }
+  .preview__wrapper{
+    text-align: center;
+    justify-content: center;
+  }
+  .preview__wrapper-feedback {
+    display: none;
+  }
+  .item-info__title {
+    font-size: 50px;
+    line-height: 54px;
+  }
+  .title-section {
+    text-align: center;
+    font-size: 50px;
+  }
+  .point {
+    flex-direction: column-reverse;
+    &__description {
+      font-size: 20px;
+      text-align: center;
+    }
+    &__subtitle {
+      font-size: 45px;
+      text-align: center;
+      &::before {
+
+      }
+    }
+  }
+  .point__info:nth-child(2) {
+    padding: 0;
+  }
+  .point {
+    &__picture {
+      padding-top: 54px;
+      &::before {
+        font-size: 200px;
+        left: -120px;
+        top: 194px;
+      }
+      &-two {
+        &::before {
+          left: 140px;
+        }
+      }
+      &-three {
+        &::before {
+          top: 144px;
+        }
+      }
+    }
+  }
+  .baking__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .baking-item {
+    padding-top: 40px;
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+  .process-item__picture {
+    display: none;
+  }
+  .process-item {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    &__info {
+      padding-left: 0;
+    }
+    &__subtitle {
+      font-size: 40px;
+      &::before {
+        top: -40px;
+        left: 125px;
+      }
+    }
+  }
+  .process__arrow {
+    display: none;
+    &-sm {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .process__title {
+    padding-bottom: 50px;
+  }
+  .review:nth-child(2) {
+    display: block;
+  }
+  .review {
+    margin-left: 0;
+  }
+  .review__icon {
+    width: 250px;
+    height: 398px;
+  }
+  .reviews__wrapper {
+    flex-wrap: wrap;
+  }
+  .review {
+    width: calc(100%/12*12);
+    padding-top: 80px;
+    min-height: 631px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 578px){
+  .shop-item__delete {
+    width: 24px;
+    height: 24px;
+  }
+  #js-button-arrow-down {
+    padding-right: 0;
+  }
+  .shop-item__delete {
+    width: 24px;
+    height: 24px;
+  }
+  .shop-item__number {
+    display: none;
+  }
+  .feedback__field {
+    width: 80%;
+    &::placeholder {
+      font-size: 22px;
+    }
+  }
+  .shop-item__subwrapper {
+    min-width: 200px;
+  }
+  .shop-item__number {
+    font-size: 36px;
+  }
+  .shop-item__subtitle {
+    font-size: 36px;
+    letter-spacing: 0;
+  }
+  .shop-item__description {
+    font-size: 18px;
+    padding-left: 0;
+  }
+  .feedback {
+    padding-top: 200px;
+    &__field {
+      padding: 15px 24px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__label {
+      letter-spacing: 0;
+    }
+  }
+  .shop__wrapper {
+    padding-bottom: 220px;
+  }
+  .control {
+    justify-content: center;
+  }
+  .cart {
+    &__label {
+      font-size: 18px;
+    }
+    &__text {
+      font-size: 12px;
+    }
+    &__button {
+      display: none;
+      &-sm {
+        display: block;
+        width: 166px;
+        height: 51px;
+        margin-top: 48px;
+        font-size: 18px;
+      }
+    }
+    &__wrapper {
+      display: flex;
+      padding: 40px 20px;
+      align-items: center;
+      flex-direction: column;
+    }
+    &-item {
+      &__icon {
+        display: none;
+      }
+      &__name {
+        text-align: center;
+      }
+      &__subwrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+      }
+    }
+  }
+  .shop-item__scroll {
+    max-width: 320px;
+    width: 100%;
+  }
+  .shop-item__subtitle-elem {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width:468px) {
+  .item-info__btn {
+    font-size: 18px;
+  }
+  .baking-item__button {
+    width: 26px;
+    height: 26px;
+  }
+  .process-item__subtitle {
+    font-size: 24px;
+    &::before {
+      font-size: 27px;
+      left: 87px;
+    }
+  }
+  .process-item__description {
+    font-size: 14px;
+    line-height: 130%;
+  }
+  .baking-item__picture {
+    width: 250px;
+    height: 205px;
+  }
+  .baking-item__subtitle {
+    font-size: 24px;
+    &::before {
+      font-size: 24px;
+    }
+  }
+  .baking-item__price {
+    font-size: 14px;
+    padding-top: 0;
+  }
+  .preview__item-lang {
+    display: none;
+  }
+  .item-info__description {
+    font-size: 14px;
+  }
+  .preview__wrapper{
+    text-align: center;
+    justify-content: center;
+  }
+  .preview__wrapper-feedback {
+    display: none;
+  }
+  .item-info__title {
+    font-size: 32px;
+    line-height: 26px;
+  }
+  .title-section {
+    text-align: center;
+    font-size: 36px;
+  }
+  .point {
+    &__picture {
+      width: 230px;
+      height: 196px;
+      & .point__icon {
+        width: 230px;
+        height: 196px;
+      }
+      &::before {
+        left: -110px;
+        top: 160px;
+      }
+      &-two {
+        &::before {
+          left: 70px;
+          top: 160px;
+        }
+      }
+      &-three {
+        & .point__icon {
+          height: 148px;
+        }
+        &::before {
+          left: -110px;
+          top: 100px;
+        }
+      }
+    }
+    &__description {
+      font-size: 14px;
+      text-align: center;
+      line-height: 130%;
+    }
+    &__subtitle {
+      font-size: 24px;
+      text-align: center;
+      &::before {
+        left: 5px;
+        top: 5px;
+      }
+      &-three {
+        &::before {
+          left: -15px;
+        }
+      }
+    }
+  }
+  .point__info:nth-child(2) {
+    padding: 0;
+  }
+  .about {
+    padding-bottom: 240px;
+  }
+  .point {
+    padding-top: 120px;
+  }
+  .review__name {
+    font-size: 36px;
+  }
+  .review__description {
+    line-height: 130%;
+  }
+  .process__button {
+    width: 227px;
+    height: 58px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .shop-item__subtitle {
+    padding-right: 20px;
+
+  }
+  .shop-item__flex-scroll {
+
+  }
+  .shop-item__description-baking {
+
+  }
+  .shop-items__wrapper {
+    position: relative;
+  }
+}

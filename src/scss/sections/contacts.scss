@@ -1,0 +1,51 @@
+.contacts {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/baking.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: $paddingSection;
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    font-family: $fontBellota;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 65px;
+  }
+}
+
+.lower-menu {
+  padding-bottom: 65px;
+  &__list {
+    display: flex;
+    padding: 0;
+  }
+  &__item {
+    margin-right: 60px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    font-family: $fontBellota;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    transition: .3s ease;
+    &:hover {
+      color: $mainColor;
+    }
+  }
+}
+
+.preview__item-number-lower {
+  margin-top: 65px;
+}
