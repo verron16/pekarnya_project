@@ -33,21 +33,20 @@ function closeMenu() {
     burger.classList.remove('open');
 }
 
-
 let app = new Vue({
     el: 'main',
     data: {
-        totalPrice: 1680,
+        isVisibleList: false,
         cart: [],
-        items: [{
-
-        }],
-        isVisibleList: false
+        totalPrice: 1690
     },
     methods: {
         openList() {
             this.isVisibleList = !this.isVisibleList
-            console.log(this.isVisibleList)
         }
     }
 })
+
+
+
+

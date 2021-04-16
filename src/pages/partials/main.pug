@@ -114,12 +114,13 @@ main
                                         path(d="M8.5 0V37M8.5 37L0.5 29M8.5 37L16.5 29" stroke="white")
                                 p.shop-item__description.shop-item__description-baking 120руб/шт
                                 .scroll__items(:style=" isVisibleList ? 'min-height: 700px;' : 'min-height: 0;' ")
-                                    .shop-item__flex.shop-item__flex-scroll
-                                        h3.shop-item__subtitle.shop-item__subtitle-elem Армянский лаваш
-                                        svg(width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg").control__add.control-element
-                                            path(d="M18.5 0V37" stroke="white")
-                                            path(d="M37 18.5L0 18.5" stroke="white")
-                                    p.shop-item__description.shop-item__description-baking 80руб/шт
+                                    .scroll__inner
+                                        .shop-item__flex.shop-item__flex-scroll
+                                            h3.shop-item__subtitle.shop-item__subtitle-elem Армянский лаваш
+                                            svg(width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg").control__add.control-element
+                                                path(d="M18.5 0V37" stroke="white")
+                                                path(d="M37 18.5L0 18.5" stroke="white")
+                                        p.shop-item__description.shop-item__description-baking 80руб/шт
                                     .shop-item__flex.shop-item__flex-scroll
                                         h3.shop-item__subtitle.shop-item__subtitle-elem Армянский лаваш
                                         svg(width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg").control__add.control-element
@@ -155,28 +156,30 @@ main
                     .cart__wrapper
                         h3.cart__subtitle Ваш заказ
                         ul.cart__items
-                            li.cart-item
-                                img(src="img/picture9.png").cart-item__icon
-                                .cart-item__subwrapper
-                                    h4.cart-item__name Лаваш
-                                    .control
-                                        svg(width="26" height="1" viewBox="0 0 26 1" fill="none" xmlns="http://www.w3.org/2000/svg").control__delete.control-element
-                                            path(d="M26 0.5L5.96046e-08 0.499999" stroke="white")
-                                        p.control__count 1
-                                        svg(width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg").control__add.control-element
-                                            path(d="M18.5 0V37" stroke="white")
-                                            path(d="M37 18.5L0 18.5" stroke="white")
-                            li.cart-item
-                                img(src="img/picture10.png").cart-item__icon
-                                .cart-item__subwrapper
-                                    h4.cart-item__name Матнакаш
-                                    .control
-                                        svg(width="26" height="1" viewBox="0 0 26 1" fill="none" xmlns="http://www.w3.org/2000/svg").control__delete.control-element
-                                            path(d="M26 0.5L5.96046e-08 0.499999" stroke="white")
-                                        p.control__count 1
-                                        svg(width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg").control__add.control-element
-                                            path(d="M18.5 0V37" stroke="white")
-                                            path(d="M37 18.5L0 18.5" stroke="white")
+                            h4.cart__null(v-if="cart.length === 0") Корзина пуста
+                            div.cart__items(v-else)
+                                li.cart-item
+                                    img(src="img/picture9.png").cart-item__icon
+                                    .cart-item__subwrapper
+                                        h4.cart-item__name Армянский лаваш
+                                        .control
+                                            svg(width="26" height="1" viewBox="0 0 26 1" fill="none" xmlns="http://www.w3.org/2000/svg").control__delete.control-element
+                                                path(d="M26 0.5L5.96046e-08 0.499999" stroke="white")
+                                            p.control__count 1
+                                            svg(width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg").control__add.control-element
+                                                path(d="M18.5 0V37" stroke="white")
+                                                path(d="M37 18.5L0 18.5" stroke="white")
+                                li.cart-item
+                                    img(src="img/picture10.png").cart-item__icon
+                                    .cart-item__subwrapper
+                                        h4.cart-item__name Матнакаш
+                                        .control
+                                            svg(width="26" height="1" viewBox="0 0 26 1" fill="none" xmlns="http://www.w3.org/2000/svg").control__delete.control-element
+                                                path(d="M26 0.5L5.96046e-08 0.499999" stroke="white")
+                                            p.control__count 1
+                                            svg(width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg").control__add.control-element
+                                                path(d="M18.5 0V37" stroke="white")
+                                                path(d="M37 18.5L0 18.5" stroke="white")
                         .cart__result
                             .result
                                 p.result__subtitle Суммка покупки

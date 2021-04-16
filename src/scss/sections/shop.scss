@@ -21,6 +21,16 @@
   }
 }
 
+.cart__null {
+  padding: 150px 0;
+  font-family: $fontBellota;
+  font-weight: 400;
+  font-size: 24px;
+  color: $secondColor;
+  text-align: center;
+  padding-right: 20px;
+}
+
 .scroll {
   overflow-y: hidden;
   max-height: 700px;
