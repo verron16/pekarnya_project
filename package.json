@@ -35,6 +35,11 @@
     "gulp-webp": "^4.0.1",
     "node-sass": "^5.0.0"
   },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "last 7 versions"
+  ],
   "dependencies": {
     "normalize.css": "^8.0.1"
   }

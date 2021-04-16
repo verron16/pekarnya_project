@@ -63,8 +63,7 @@ task('sass', () => {
         // Импорт стилей в один
         .pipe(sassGlob())
         .pipe(gulpif(env === 'prod', autoprefixer({
-            browsers: ['last 7 versions'],
-            cascade: true
+
         })))
         .pipe(sass().on('error', sass.logError))
         .pipe(gcmq())
