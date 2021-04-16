@@ -63,7 +63,7 @@ task('sass', () => {
         // Импорт стилей в один
         .pipe(sassGlob())
         .pipe(gulpif(env === 'prod', autoprefixer({
-            browsers: ['last 5 versions'],
+            browsers: ['last 7 versions'],
             cascade: true
         })))
         .pipe(sass().on('error', sass.logError))
@@ -74,10 +74,7 @@ task('sass', () => {
             extname: ".css"
         })))
         .pipe(gulpif(env === 'prod', cssnano({
-            zindex: false,
-            discardComments: {
-                removeAll: true
-            }
+
        })))
         .pipe(dest(`${DIST_PATH}/css`))
         .pipe(browserSync.stream())
