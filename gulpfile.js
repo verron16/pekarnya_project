@@ -28,8 +28,7 @@ const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 const gulpif = require('gulp-if');
 const webp = require('gulp-webp');
-const htmlmin = require('gulp-htmlmin');
-const gcmq = require('gulp-group-css-media-queries');
+// const htmlmin = require('gulp-htmlmin');
 const pug = require('gulp-pug');
 const rename = require ("gulp-rename");
 const cssnano = require ("gulp-cssnano");
@@ -49,9 +48,6 @@ task('copy:html', () => {
 
         // Конвертация pug в html
         .pipe(pug())
-        .pipe(gulpif(env === 'prod', htmlmin({
-            collapseWhitespace: true
-        })))
         .pipe(dest(DIST_PATH))
         .pipe(browserSync.stream())
 });
@@ -66,7 +62,6 @@ task('sass', () => {
 
         })))
         .pipe(sass().on('error', sass.logError))
-        .pipe(gcmq())
         .pipe(gulpif(env === 'dev', sourcemaps.write()))
         .pipe(gulpif(env === 'prod', rename({
             suffix: ".min",
