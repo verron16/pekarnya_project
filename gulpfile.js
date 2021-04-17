@@ -62,7 +62,7 @@ task('sass', () => {
         .pipe(concat('style.scss'))
         // Импорт стилей в один
         .pipe(sassGlob())
-        .pipe(gulpif(env === 'prod', autoprefixer({
+        .pipe(gulpif(env === 'dev', autoprefixer({
 
         })))
         .pipe(sass().on('error', sass.logError))
